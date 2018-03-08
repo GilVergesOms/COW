@@ -42,7 +42,7 @@
 	<div class="container">
 		<section class="main row">
 			<article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-				<img src="Resources\plane2.png">
+				<img id="mainImage" src="Resources\plane2.png">
 			</article>
 			<aside class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
 				<p id="aside_id">Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación. Si continua navegando, consideramos que acepta su uso. <br> Cookie es un fichero que se descarga en su ordenador al acceder a determinadas páginas web. Las cookies permiten a una página web, entre otras cosas, almacenar y recuperar información sobre los hábitos de navegación de un usuario o de su equipo y, dependiendo de la información que contengan y de la forma en que utilice su equipo, pueden utilizarse para reconocer al usuario.</p>
@@ -101,9 +101,30 @@
 							</select>
 						</p>
 					</div>
-					<div class="s_button">
-						<button class="btn btn-primary">Buscar</button>
+					<div class="calendar" class="container">
+						<table bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0">
+						  	<tr>
+						    	<td class="cal_text">
+						    		<h4>Anada</h4>
+						    	</td>
+						    	<td class="cal_text">
+						    		<h4>Tornada</h4>
+						    	</td>
+						  	</tr>
+						  	<tr>
+						    	<td>
+						    		<input id="tornada" type="date" value="2018-01-01">
+						    	</td>
+						    	<td>
+						    		<input id="tornada" type="date" value="2018-01-01">
+						    	</td>
+						  	</tr>
+						</table>
 					</div>
+					<div class="s_button">
+						<button class="btn btn-primary" type="submit">Buscar</button>
+					</div>
+					<input type="checkbox" name="only_go" value="go"> Només anada<br>
 				</form>
 			</div>
 	</div>
@@ -142,8 +163,24 @@
 			</div>
 		</div>
 	</div>
-
+	<div id="busqueda" class="row" class="col-xs-12 col-sm-12 col-md-12">
+		<form method="get" action="http://www.google.com/custom">
+			<table bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0">
+			  <tr>
+			    <td><a href="http://www.google.com/custom/">
+			    <img src="http://www.google.com/logos/Logo_40wht.gif" border="0" alt="Google" align="absmiddle">
+			    </a>
+			    </td><td>
+			    <input type="text" name="q" size="25" maxlength="255" value="">
+			    </td><td>
+			    <input type="submit" name="btnG" value="Buscar en Google">
+			    </td>
+			  </tr>
+			</table>
+		</form>
+	</div>
 	<script src="js/jquery.js"></script>  <!--No utilitzo en aquesta practica-->
 	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+

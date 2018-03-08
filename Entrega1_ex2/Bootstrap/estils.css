@@ -6,7 +6,7 @@ header{
 	background: black;
 }
 
-img{
+img#mainImage{
 	box-shadow: 6px 6px 1px grey;
 }
 
@@ -14,6 +14,13 @@ h1{
 	color: black;
 }
 
+.cal_text{
+	text-align: center;
+}
+
+#tornada{
+	margin-left: 3%;
+}
 
 aside{
 	background: red;
@@ -57,6 +64,11 @@ form{
 	margin-left: 40%;
 }
 
+.calendar{
+	margin-left: 32%;
+	margin-bottom: 1%;
+}
+
 #content{
 	margin-top: 1%; /* Pone un margen invisible sobre el div*/
 	height:100%;
@@ -93,72 +105,77 @@ div#header{
 	}
 
 /*Codi del menu desplegabe*/
-	#menu ul {
-		 list-style:none;
-		 margin:0;
-		 padding:0;
-	}
+#menu ul {
+	 list-style:none;
+	 margin:0;
+	 padding:0;
+}
 
-	/* items del menu */
+/* items del menu */
 
-	#menu ul li {
-		 background-color:black;
-	}
+#menu ul li {
+	 background-color:black;
+}
 
-	/* enllaços del menu */
+/* enllaços del menu */
 
-	#menu ul a {
-		 display:block;
-		 color:#fff;
-		 text-decoration:none;
-		 font-weight:400;
-		 font-size:15px;
-		 padding:10px;
-		 font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		 text-transform:uppercase;
-		 letter-spacing:1px;
-	}
+#menu ul a {
+	 display:block;
+	 color:#fff;
+	 text-decoration:none;
+	 font-weight:400;
+	 font-size:15px;
+	 padding:10px;
+	 font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	 text-transform:uppercase;
+	 letter-spacing:1px;
+}
 
-	/* items del menu */
+/* items del menu */
 
-	#menu ul li {
-		 position:relative;
-		 float:left;
-		 margin:0;
-		 padding:0;
-	}
+#menu ul li {
+	 position:relative;
+	 float:left;
+	 margin:0;
+	 padding:0;
+}
 
-	/* efecte al passar el boto per sobre */
+/* efecte al passar el boto per sobre */
 
-	#menu ul li:hover {
-	 	background:#5b78a7;
-	}
+#menu ul li:hover {
+ 	background:#5b78a7;
+}
 
-	#menu ul ul {
-		display:none;
-		position:absolute;
-		top:100%;
-		left:0;
-		background:#eee;
-		padding:0;
-	}
+#menu ul ul {
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#eee;
+	padding:0;
+}
 
-	/* items del menu desplegable */
+/* items del menu desplegable */
 
-	#menu ul ul li {
-		float:none;
-		width:150px
-	}
+#menu ul ul li {
+	float:none;
+	width:150px
+}
 
-	/*enllaços dels items del menu desplegable */
+/*enllaços dels items del menu desplegable */
 
-	#menu ul ul a {
-		line-height:120%;
-		padding:10px 15px;
-	}
+#menu ul ul a {
+	line-height:120%;
+	padding:10px 15px;
+}
 
-	/* items del menu desplegable al passar el ratolí */
+/* items del menu desplegable al passar el ratolí */
 
-	#menu ul li:hover > ul {
-		display:block;
-	}
+#menu ul li:hover > ul {
+	display:block;
+}
+
+#busqueda{
+	margin-left: 20%;
+}
+
